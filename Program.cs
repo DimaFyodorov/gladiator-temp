@@ -8,13 +8,15 @@ class Program
 
         do
         {
-            Console.WriteLine("--- Создание Первого Гладиатора ---");
+            Console.WriteLine("\n--- Создание Первого Гладиатора ---");
             glad1 = CreateGladiator();
+        } while (glad1 == null);
 
+        do
+        {
             Console.WriteLine("\n--- Создание Второго Гладиатора ---");
             glad2 = CreateGladiator();
-
-        } while (glad1 == null || glad2 == null);
+        } while (glad2 == null);
 
         Random rand = new();
         Console.WriteLine("\n=== БОЙ НАЧИНАЕТСЯ ===");
@@ -51,14 +53,14 @@ class Program
         Console.Write("Введите начальный уровень здоровья: ");
         if (!double.TryParse(Console.ReadLine(), out double health) || health <= 0)
         {
-            Console.WriteLine("Ошибка: некорректное значение здоровья.");
+            Console.WriteLine("\nОшибка: некорректное значение здоровья.\n");
             return null!;
         }
 
         Console.Write("Введите крепость брони в процентах от 0 до 100: ");
         if (!double.TryParse(Console.ReadLine(), out double armorPercent) || armorPercent < 0 || armorPercent > 100)
         {
-            Console.WriteLine("Ошибка: некорректное значение брони.");
+            Console.WriteLine("\nОшибка: некорректное значение брони.\n");
             return null!;
         }
 
