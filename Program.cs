@@ -21,17 +21,10 @@ class Program
         Random rand = new();
         Console.WriteLine("\n=== БОЙ НАЧИНАЕТСЯ ===");
 
-        double attack1 = 10.0 + rand.NextDouble() * 90.0;
-        glad2.TakeDamage(attack1);
-
-        Console.WriteLine($"\nГладиатор 1 наносит удар силой {attack1:F2}!");
-        Console.WriteLine($"Гладиатор 2 получил чистый урон: {glad2.LastDamageTaken:F2}. Остаток здоровья: {glad2.Health:F2}, Броня: {glad2.ArmorPercent:F2}%");
-
-        double attack2 = 10.0 + rand.NextDouble() * 90.0;
-        glad1.TakeDamage(attack2);
-
-        Console.WriteLine($"\nГладиатор 2 наносит ответный удар силой {attack2:F2}!");
-        Console.WriteLine($"Гладиатор 1 получил чистый урон: {glad1.LastDamageTaken:F2}. Остаток здоровья: {glad1.Health:F2}, Броня: {glad1.ArmorPercent:F2}%");
+        while (glad1.Health != 0 && glad2.Health != 0)
+        {
+            Fight(glad1, glad2, rand);
+        }
 
         Console.WriteLine("\n=== ИТОГ БОЯ ===");
         if (glad1.Health > glad2.Health)
@@ -46,6 +39,21 @@ class Program
         {
             Console.WriteLine("Ничья! Оба гладиатора имеют одинаковое количество здоровья.");
         }
+    }
+
+    private static void Fight(Gladiator glad1, Gladiator glad2, Random rand)
+    {
+        double attack1 = 10.0 + rand.NextDouble() * 90.0;
+        glad2.TakeDamage(attack1);
+
+        Console.WriteLine($"\nГладиатор 1 наносит удар силой {attack1:F2}!");
+        Console.WriteLine($"Гладиатор 2 получил чистый урон: {glad2.LastDamageTaken:F2}. Остаток здоровья: {glad2.Health:F2}, Броня: {glad2.ArmorPercent:F2}%");
+
+        double attack2 = 10.0 + rand.NextDouble() * 90.0;
+        glad1.TakeDamage(attack2);
+
+        Console.WriteLine($"\nГладиатор 2 наносит ответный удар силой {attack2:F2}!");
+        Console.WriteLine($"Гладиатор 1 получил чистый урон: {glad1.LastDamageTaken:F2}. Остаток здоровья: {glad1.Health:F2}, Броня: {glad1.ArmorPercent:F2}%");
     }
 
     static Gladiator CreateGladiator()
