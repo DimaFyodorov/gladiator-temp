@@ -1,0 +1,180 @@
+<mxfile host="Electron">
+  <diagram name="Страница-1" id="Kz_IGKp5PgiuSh1pK7Sp">
+    <mxGraphModel dx="2331" dy="1865" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=15;align=center;verticalAlign=middle;" value=" " vertex="1">
+          <mxGeometry height="55" width="200" x="1180" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;double=1;doubleStroke=1;" value="Создать первого гладиатора&lt;br&gt;&lt;br&gt;Повторять ввод, пока данные корректны:&lt;br&gt;• здоровье — число больше 0;&lt;br&gt;• броня — число от 0 до 100%." vertex="1">
+          <mxGeometry height="105" width="360" x="1100" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;" value="Сообщить о начале боя" vertex="1">
+          <mxGeometry height="65" width="400" x="1080" y="1165" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;" value="Здоровье гладиатора 1 ≠ 0&lt;br&gt;И здоровье гладиатора 2 ≠ 0?" vertex="1">
+          <mxGeometry height="145" width="500" x="1030" y="1285" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=middle;double=1;doubleStroke=1;" value="Провести обмен ударами:&lt;br&gt;&lt;br&gt;1. Сгенерировать силу атаки гладиатора 1 (10–100).&lt;br&gt;2. Рассчитать урон гладиатору 2 с учётом его брони.&lt;br&gt;3. Уменьшить здоровье и прочность брони гладиатора 2.&lt;br&gt;4. Сгенерировать ответную атаку гладиатора 2 (10–100).&lt;br&gt;5. Рассчитать урон гладиатору 1 с учётом его брони.&lt;br&gt;6. Уменьшить здоровье и прочность брони гладиатора 1.&lt;br&gt;7. Для каждого гладиатора ограничить здоровье и броню снизу нулём.&lt;br&gt;8. Вывести нанесённый урон, остаток здоровья и броню." vertex="1">
+          <mxGeometry height="300" width="800" x="880" y="1520" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-6" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;" value="Сообщить об окончании боя" vertex="1">
+          <mxGeometry height="65" width="400" x="1090" y="2115" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-7" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;" value="Здоровье гладиатора 1&lt;br&gt;больше здоровья гладиатора 2?" vertex="1">
+          <mxGeometry height="145" width="500" x="1040" y="2235" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-8" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;" value="Вывести сообщение:&lt;br&gt;победил гладиатор 1;&lt;br&gt;показать остаток здоровья" vertex="1">
+          <mxGeometry height="110" width="420" x="440" y="2495" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-9" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;" value="Здоровье гладиатора 2&lt;br&gt;больше здоровья гладиатора 1?" vertex="1">
+          <mxGeometry height="130" width="420" x="1080" y="2485" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-10" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;" value="Вывести сообщение:&lt;br&gt;победил гладиатор 2;&lt;br&gt;показать остаток здоровья" vertex="1">
+          <mxGeometry height="110" width="420" x="1650" y="2725" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-11" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;" value="Вывести сообщение:&lt;br&gt;ничья — здоровье одинаково" vertex="1">
+          <mxGeometry height="100" width="420" x="1080" y="2725" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=15;align=center;verticalAlign=middle;" value="Конец" vertex="1">
+          <mxGeometry height="55" width="200" x="1190" y="2965" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-13" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sPiaQWIHGnzi36_NZiy1-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1290" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-14" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="sPiaQWIHGnzi36_NZiy1-31" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-15" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;" target="sPiaQWIHGnzi36_NZiy1-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-16" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sPiaQWIHGnzi36_NZiy1-6" value="Да">
+          <mxGeometry relative="1" x="-0.5579" as="geometry">
+            <Array as="points">
+              <mxPoint x="1780" y="1357.5" />
+              <mxPoint x="1780" y="1950" />
+              <mxPoint x="1290" y="1950" />
+            </Array>
+            <mxPoint x="1690" y="1670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-17" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="sPiaQWIHGnzi36_NZiy1-4" value="">
+          <mxGeometry relative="1" x="0.4818" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="1900" />
+              <mxPoint x="810" y="1900" />
+              <mxPoint x="810" y="1357.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-18" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;entryX=0.501;entryY=-0.007;entryDx=0;entryDy=0;entryPerimeter=0;" target="sPiaQWIHGnzi36_NZiy1-5" value="да">
+          <mxGeometry relative="1" x="-0.1355" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="1480" />
+            </Array>
+            <mxPoint x="1280" y="1430" as="sourcePoint" />
+            <mxPoint x="1460" y="1480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-19" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;" target="sPiaQWIHGnzi36_NZiy1-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-20" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="Да">
+          <mxGeometry relative="1" x="0.3464" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="2307.5" />
+              <mxPoint x="689.9" y="2307" />
+            </Array>
+            <mxPoint x="650" y="2490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-21" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;" target="sPiaQWIHGnzi36_NZiy1-9" value="Нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-22" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sPiaQWIHGnzi36_NZiy1-10" value="Да">
+          <mxGeometry relative="1" x="-0.2484" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-23" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sPiaQWIHGnzi36_NZiy1-11" value="Нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-24" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="sPiaQWIHGnzi36_NZiy1-12" value=" ">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="2870" />
+              <mxPoint x="1290" y="2870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-25" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="sPiaQWIHGnzi36_NZiy1-12" value="">
+          <mxGeometry relative="1" x="-0.0286" as="geometry">
+            <Array as="points">
+              <mxPoint x="1860" y="2870" />
+              <mxPoint x="1290" y="2870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-26" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;" target="sPiaQWIHGnzi36_NZiy1-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-27" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="sPiaQWIHGnzi36_NZiy1-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1500" y="752.5" />
+              <mxPoint x="1500" y="592.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-28" connectable="0" parent="sPiaQWIHGnzi36_NZiy1-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Нет" vertex="1">
+          <mxGeometry relative="1" x="0.0811" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-29" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sPiaQWIHGnzi36_NZiy1-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-30" connectable="0" parent="sPiaQWIHGnzi36_NZiy1-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Да" vertex="1">
+          <mxGeometry relative="1" x="-0.1122" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-31" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;" value="Гладиатор создан?" vertex="1">
+          <mxGeometry height="105" width="180" x="1190" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;double=1;doubleStroke=1;" value="Создать второго гладиатора&lt;br&gt;&lt;br&gt;Повторять ввод, пока данные корректны:&lt;br&gt;• здоровье — число больше 0;&lt;br&gt;• броня — число от 0 до 100%." vertex="1">
+          <mxGeometry height="105" width="360" x="1100" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-33" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-32" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=12;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="sPiaQWIHGnzi36_NZiy1-38" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-34" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="sPiaQWIHGnzi36_NZiy1-32">
+          <mxGeometry relative="1" x="0.0625" as="geometry">
+            <Array as="points">
+              <mxPoint x="1500" y="1052.5" />
+              <mxPoint x="1500" y="902.5" />
+            </Array>
+            <mxPoint x="1460" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-35" connectable="0" parent="sPiaQWIHGnzi36_NZiy1-34" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Нет" vertex="1">
+          <mxGeometry relative="1" x="0.15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-36" edge="1" parent="1" source="sPiaQWIHGnzi36_NZiy1-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sPiaQWIHGnzi36_NZiy1-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-37" connectable="0" parent="sPiaQWIHGnzi36_NZiy1-36" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Да" vertex="1">
+          <mxGeometry relative="1" x="-0.1163" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sPiaQWIHGnzi36_NZiy1-38" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;" value="Гладиатор создан?" vertex="1">
+          <mxGeometry height="105" width="180" x="1190" y="1000" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
